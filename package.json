@@ -1,0 +1,20 @@
+{
+  "name": "pre-entrega3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass --watch scss/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicossanchez1/pre-entrega3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicossanchez1/pre-entrega3/issues"
+  },
+  "homepage": "https://github.com/nicossanchez1/pre-entrega3#readme",
+  "description": ""
+}

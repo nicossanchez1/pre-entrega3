@@ -1,0 +1,302 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: white;
+  width: 100%;
+  min-width: 420px;
+}
+
+.donde_encontrarnos {
+  justify-content: center;
+  text-align: center;
+}
+
+.quienes_somos {
+  font-size: 1.8rem;
+  text-align: center;
+  font-family: bold;
+  font-weight: bold;
+}
+
+.quienes_somos_historia {
+  font-size: 1.3rem;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  overflow: hidden;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+article img {
+  order: -1;
+  align-self: center;
+}
+
+article button {
+  margin-top: auto;
+  background: black;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 1rem;
+  @extend .quienes_somos_historia;
+  cursor: pointer;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
+  font-size: 14px;
+  color: #333333;
+}
+
+.waving {
+  position: relative;
+  text-align: center;
+  background: $gradiant-wave;
+  color: white;
+}
+.logo {
+  width: 50px;
+  fill: white;
+  padding-right: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.inner- {
+  height: 65vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.nico {
+  color: $primary-color;
+}
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -24px; /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+}
+
+.content {
+  position: relative;
+  height: 20vh;
+  text-align: center;
+  background-color: white;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+  .content {
+    height: 30vh;
+  }
+  h1 {
+    font-size: 24px;
+  }
+}
+
+/* cartel */
+.cartel,
+.masthead {
+  position: relative;
+  overflow: hidden;
+  padding-top: calc(7rem + 72px);
+  padding-bottom: 7rem;
+  background: $gradiant-cartel;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: cover;
+}
+header.masthead .masthead-content {
+  z-index: 1;
+  position: relative;
+}
+header.masthead .masthead-content .masthead-heading {
+  color: black;
+  font-size: 4rem;
+}
+header.masthead .masthead-content .masthead-subheading {
+  font-size: 2rem;
+}
+header.masthead .bg-circle {
+  z-index: 0;
+  position: absolute;
+  border-radius: 100%;
+  background: $gradiant-masterhead;
+}
+header.masthead .bg-circle-1 {
+  height: 90rem;
+  width: 90rem;
+  bottom: -55rem;
+  left: -55rem;
+}
+header.masthead .bg-circle-2 {
+  height: 50rem;
+  width: 50rem;
+  top: -25rem;
+  right: -25rem;
+}
+header.masthead .bg-circle-3 {
+  height: 20rem;
+  width: 20rem;
+  bottom: -10rem;
+  right: 5%;
+}
+
+.sizefoto {
+  height: 150px;
+  width: 150px;
+}
+
+.suscribete {
+  justify-content: center;
+  text-align: center;
+}
+
+/* GALLERY */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500);
+
+:root {
+  /* Base font size */
+  font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0 2rem 2rem;
+}
+
+.heading {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  padding: 3.5rem 0;
+  color: #1a1a1a;
+}
+
+.heading span {
+  display: block;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  /* Compensate for excess margin on outer gallery flex items */
+  margin: -1rem -1rem;
+}
+
+.gallery-item {
+  /* Minimum width of 24rem and grow to fit available space */
+  flex: 1 0 24rem;
+  /* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+  margin: 1rem;
+  box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+.gallery-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+  transform: scale(1.15);
+}
+
+/*
+
+The following rule will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+
+*/
+
+@supports (display: grid) {
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    grid-gap: 2rem;
+  }
+
+  .gallery,
+  .gallery-item {
+    margin: 0;
+  }
+}

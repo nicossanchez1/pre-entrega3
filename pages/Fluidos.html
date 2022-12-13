@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"/>
+    <!-- link style.Css -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- link googlefonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"/>
+    <title>Daytona | Fluidos</title>
+    <meta name="description" content="Daytona ofrece la más amplia variedad de fluidos, la mejor calidad y al mejor precio">
+    <meta name="keywords" content="daytona, aceites, filtros, fluidos, repuestos, neumaticos, Daytona, aceite, filtro, fluido, repuesto, neumatico, neumáticos">   <link rel="shortcut icon" href="./img/car-4.png">
+    <link rel="shortcut icon" href="../img/car-4.png">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md shadow bg-dark navbar-dark navbar-brand fixed-top mx-0 menu">
+        <div class="container-fluid position-relative">
+          <div class="">
+            <a class="navbar-brand" href="../index.html"><img src="../img/car2.png" alt="Bootstrap" width="44" height="44"></a>
+          </div>
+          <h1 class="daytona active nav-item pe-4" href="">Daytona</h1></a>
+          <!-- BUTTON BURGER -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon active burger pe-0"></span>
+          </button>
+          <!-- MENU HAMBURGUESA DESPLEGADO -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item inicio"><a class="nav-link active text-center fw-bold" aria-current="page" href="../index.html"> Inicio</a></li>
+              <li class="nav-item contacto"><a class="nav-link active text-center fw-bold" href="./contacto.html">Contacto</a></li>
+              <li class="nav-item aceites"><a class="nav-link active text-center fw-bold" href="./aceites.html">Aceites</a></li>
+              <li class="nav-item filtros"><a class="nav-link active text-center fw-bold" href="./Filtros.html">Filtros</a></li>
+              <li class="nav-item repuestos"><a class="nav-link active text-center fw-bold" href="./Repuestos.html">Repuestos</a></li>
+              <li class="nav-item neumaticos"><a class="nav-link active text-center fw-bold" href="./Neumaticos.html">Neumáticos</a></li>
+              <li class="nav-item fluidos"><a class="nav-link active text-center fw-bold" href="./Fluidos.html">Fluidos</a></li>
+              <li class="nav-item"><a class="nav-link active ubicacion text-center fw-bold" href="https://goo.gl/maps/dXQ3g8wKDKFzKCR27" target="_blank">Ubicación</a></li>
+              <!-- dropdown menu -->
+              <li class="nav-item donde_encontrarnos"><a class="nav-link active text-center fw-bold py-1 my-0" aria-current="page" href="#">Insumos</a></li>
+              <li class="nav-item dropdown donde_encontrarnos"><a class="nav-link mini_boton dropdown-toggle active text-center my-0 py-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img class="" src="" alt="" /></a>
+                <ul class="dropdown-menu bg-dark">
+                  <li><a class="dropdown-item text-warning fw-bold text-center" href="./aceites.html">Aceites</a></li>
+                  <li><a class="dropdown-item text-warning fw-bold text-center" href="./Filtros.html">Filtros</a></li>
+                  <li><a class="dropdown-item text-warning fw-bold text-center" href="./Repuestos.html">Repuestos</a></li>
+                  <li><a class="dropdown-item text-warning fw-bold text-center" href="./Neumaticos.html">Neumáticos</a></li>
+                  <li><a class="dropdown-item text-warning fw-bold text-center" href="./contacto.html">Fluidos</a></li>
+                </ul>
+              </li>
+              <!-- dropdown menu 2 -->
+              <li class="nav-item donde_encontrarnos"><a class="nav-link active text-center fw-bold py-0 mb-y" aria-current="page" href="#">Donde Encontrarnos</a></li>
+              <li class="nav-item dropdown donde_encontrarnos"><a class="nav-link mini_boton dropdown-toggle active text-center my-0 py-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img class="" src="" alt="" /></a>
+                <ul class="dropdown-menu bg-dark">
+                  <li><a class="dropdown-item text-warning fw-bold text-center" href="./contacto.html">Contacto</a></li>
+                  <li><a class="dropdown-item text-warning fw-bold text-center" href="https://goo.gl/maps/dXQ3g8wKDKFzKCR27" target="_blank">Ubicación</a></li>
+                </ul>
+              </li>
+              </ul>
+              </ul>
+            <!-- Formulario search -->
+            <form class="d-flex" role="search">
+              <input class="form-control text me-3 px-4" type="search" placeholder="Introduce aquí el texto" aria-label="Search"/>
+              <button class="btn btn-outline-success active buscar" type="submit" href="">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- COMIENZO MAIN -->
+    <main>
+      <div class="minimo row mx-0 p-0 m-0 mt-3 border-0">
+        <!-- COMIENZO SIDEBARLEFT -->
+        <div class="col-2 bg-white border-0 mt-4 px-0 mx-0 expand">
+          <div class="navbar2 border-0 mt-5 pt-0 ">
+            <div class="navbar22 mt-4 border-0 m-0 p-0">
+              <div class="border-end border-0 intro" id="sidebar-wrapper">
+                <div class="sidebar-heading border-bottom mt-0">
+                  <div class="fixed">
+                    <div class="list-group list-group-flush px-0 pt-3 col-2 border-0 navbar222">
+                    <a class="list-group-item sidebar_flex icon-inicio list-group-item-action  border-0 mx-0 px-0 py-3" href="../index.html"><img class="sidebar_icons" src="../img/inicio.png" alt="index"><span class="sidebar_text">Inicio</span></a>
+                    <a class="list-group-item sidebar_flex icon-aceites list-group-item-action  border-0  mx-0 px-0 py-3" href="./aceites.html"><img class="sidebar_icons" src="../img/car-aceite.png" alt="aceites" /><span class="sidebar_text">Aceites</span></a>
+                    <a class="list-group-item sidebar_flex icon-filtros list-group-item-action  border-0  mx-0 px-0 py-3" href="./Filtros.html"><img class="sidebar_icons" src="../img/filtro.png" alt="filtros" /><span class="sidebar_text">Filtros</span></a>
+                    <a class="list-group-item sidebar_flex icon-repuestos list-group-item-action  border-0   mx-0 px-0 py-3" href="./Repuestos.html"><img class="sidebar_icons molde" src="../img/spring.png" alt="repuestos" /><span class="sidebar_text">Repuestos</span></a>
+                    <a class="list-group-item sidebar_flex icon-fluidos list-group-item-action  border-0   mx-0 px-0 py-3" href="./Fluidos.html"><img class="sidebar_icons" src="../img/fluido.png" alt="fluidos" /><span class="sidebar_text">Fluidos</span></a>
+                    <a class="list-group-item sidebar_flex icon-neumaticos list-group-item-action  border-0   mx-0 px-0 py-3" href="./Neumaticos.html"><img class="sidebar_icons molde" src="../img/neumatico.png" alt="neumaticos" /><span class="sidebar_text">Neumáticos</span></a>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- FIN SIDEBAR Y COMIENZO DE LA PARTE PRINCIPAL -->
+          <div class="expand col-10 mx-0 px-0 mt-4">
+            <h2 class="bienvenido mt-4 pt-5  pb-3 mb-0 border-0 ps-0 me-0 fw-semibold text-center">Nuestros Fluidos</h2>
+            <section class="m-5 p-4">
+              <article>
+                <!--GRID ITEM-->
+                <h2 class="fw-bold">Liquido para dirección hidráulica</h2>
+                <h2>$50</h2>
+                <p>Para la direccion de tu vehiculo, horquillas y amortiguadores</p>
+                <ul></ul>
+                <img src="../img/hidraulica.jpg" class="sizefoto" alt="15w40">
+                <button class="bg-info fw-bold">COMPRAR</button>
+              </article>
+              <article>
+                <!--GRID ITEM-->
+                <h2 class="fw-bold">Refrigerante</h2>
+                <h2>$70</h2>
+                <p>Pensado para altas temperaturas</p>
+                <ul></ul>
+                <img src="../img/refrigerante.jpeg" class="sizefoto" alt="castrol">
+                <button class="bg-info fw-bold">COMPRAR</button>
+              </article>
+            
+              <article>
+                <!--GRID ITEM-->
+                <h2 class="fw-bold">Anticongelante</h2>
+                <h2>$80</h2>
+                <p>Total ofrece la mejor calidad para tu auto</p>
+                <ul></ul>
+                <img src="../img/refrigerante2.jpeg" class="sizefoto" alt="liqui-moly">
+                <button class="bg-info fw-bold">COMPRAR</button>
+              </article>
+ 
+              <article>
+                <!--GRID ITEM-->
+                <h2 class="fw-bold">Arranca motores</h2>
+                <h2>$50</h2>
+                <p>Ofrece mayor durabilidad a un precio mas que accesible</p>
+                <ul></ul>
+                <img src="../img/arranca-motores.jpg" class="sizefoto" alt="pennzoil">
+                <button class="bg-info fw-bold">COMPRAR</button>
+              </article>
+              <article>
+                <!--GRID ITEM-->
+                <h2 class="fw-bold">Anticorrosivo</h2>
+                <h2>$50</h2>
+                <p>Ofrece maxima protección para las superficies de tu motor</p>
+                <ul></ul>
+                <img src="../img/anticorrosivo.jpg" class="sizefoto" alt="pennzoil">
+                <button class="bg-info fw-bold">COMPRAR</button>
+              </article>             
+            </section>
+          <!-- Historia -->
+          <div class="px-0 mx-0">
+            <div class="container-fluid my-5 py-5 mx-5 px-5 center col-10">
+              <h2 class="text-center fw-bold">Tambien puede interesarte</h2> 
+              <div class="heading-line mb-5"></div>
+              <!-- GALLERY -->
+              <div class="container">              
+                <div class="gallery">
+                  <div class="gallery-item">
+                    <img class="gallery-image" src="../img/man-filter.jpeg" alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer">
+                  </div>
+                  <div class="gallery-item">
+                    <img class="gallery-image" src="../img/bujia.jpg" alt="sunset behind San Francisco city skyline">
+                  </div>
+                  <div class="gallery-item">
+                    <img class="gallery-image" src="../img/ruedar.webp" alt="people holding umbrellas on a busy street at night lit by street lights and illuminated signs in Tokyo, Japan">
+                  </div>
+                  <div class="gallery-item">
+                    <img class="gallery-image" src="../img/refrigerante2.jpeg" alt="car interior from central back seat position showing driver and blurred view through windscreen of a busy road at night">
+                  </div>
+                  <div class="gallery-item">
+                    <img class="gallery-image" src="../img/arranca-motores.jpg" alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA">
+                  </div>
+                  <div class="gallery-item">
+                    <img class="gallery-image" src="../img/amortiguador.jpg" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+                  </div>
+                </div>
+              </div>
+            </div>            
+          <!-- Suscripciones -->
+          <div>
+            <h3 class="fw-bold fst-italic text-center">Suscribete</h3>
+            <div class="row gy-3 gx-2 mx-5 mt-0 text-center carousel">
+              <article class="col-10 col-md-4 my-0 p-2 shadow">
+                <div
+                  class="border border-4 border-success bg-dark text-white rounded-3">
+                  <p class="mt-5 fw-bold text-white">Basic</p>
+                  <h2 class="display-4">$200</h2>
+                  <p class="font-monospace mt-3 text-white">Para usuarios casuales</p>
+                  <ul class="list-unstyled my-5">
+                    <li>Cambio de aceite y filtros 1x mes</li>
+                  </ul>
+                  <a href="#" class="bg-info text-white d-block py-3 text-decoration-none fw-bold">Comprar</a>
+                </div>
+              </article>
+              <article class="col-10 col-md-4 my-0 p-2 shadow">
+                <div class="border border-4 border-primary rounded-3 bg-dark text-white">
+                  <p class="mt-5 fw-bold text-white">Voyager</p>
+                  <h2 class="display-4">$400</h2>
+                  <p class="font-monospace mt-3 text-white">Para usuarios regulares</p>
+                  <ul class="list-unstyled my-5">
+                    <li>Incluye service completo 1x mes</li>
+                  </ul>
+                  <a href="#" class="bg-info text-white d-block py-3 text-decoration-none fw-bold">Comprar</a>
+                </div>
+              </article>
+              <article class="col-10 col-md-4 my-0 p-2 shadow">
+                <div class="border border-4 border-warning rounded-3 bg-dark text-white">
+                  <p class="mt-5 fw-bold text-white">Gold</p>
+                  <h2 class="display-4">$600</h2>
+                  <p class="font-monospace mt-3 text-white">Para industrias y agro</p>
+                  <ul class="list-unstyled my-5">
+                    <li>Incluye service completo 5x mes</li>
+                  </ul>
+                  <a href="#" class="bg-info text-white d-block py-3 text-decoration-none fw-bold">Comprar</a>
+                </div>
+              </article>
+            </div>
+          </div>
+            </div>          
+            </div>        
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </main>
+    <div class="space"></div>
+
+    <footer>
+      <svg class="oleaje " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path class="path" fill="#f4d33a" fill-opacity="1" d="M0,96L60,106.7C120,117,240,139,360,160C480,181,600,203,720,186.7C840,171,960,117,1080,112C1200,107,1320,149,1380,170.7L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+      <div class="footer_space"> 
+        <h2 class="footer__title ps-4 text-center fw-bold">Buscanos en las redes</h2>
+        <div class="heading-line mb-5"></div>
+        <ul class="footah m-0">
+          <li class="footah_link"><a href="https://www.instagram.com/nicossanchez/" target="_blank"><i class="fab fa-facebook-f icon"></i></a></li>
+          <li class="footah_link"><a href="https://twitter.com/nicossanchez" target="_blank"><i class="fab fa-twitter icon"></i></a></li>
+          <li class="footah_link"><a href="https://www.linkedin.com/in/nicossanchez/" target="_blank"><i class="fab fa-linkedin-in icon"></i></a></li>
+          <li class="footah_link"><a href="https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=1209600&osid=1&continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&ifkv=ARgdvAtLmYlq883Mw2WEETNCG-SXwT9bIH3pKsnwXUQqcaoIt_z8FcvwVutb2W_nW_ICC00Yany8&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank"><i class="fab fa-google-plus-g icon"></i></a></li>
+        </ul>
+      </div>
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+<!-- - -->

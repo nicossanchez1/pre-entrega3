@@ -1,0 +1,62 @@
+@mixin icon-size {
+  width: $size-width-icon;
+  height: $size-height-icon;
+}
+.icon-inicio img {
+  @include icon-size;
+}
+
+.icon-aceites img {
+  @include icon-size;
+}
+.icon-filtros img {
+  @include icon-size;
+}
+.icon-repuestos img {
+  @include icon-size;
+}
+.icon-fluidos img {
+  @include icon-size;
+}
+.icon-neumaticos img {
+  @include icon-size;
+}
+
+.navbar222 a {
+  font-size: 18px;
+}
+
+.menu {
+  background: linear-gradient(to right, #f5002d, #e44965);
+}
+
+.buscar {
+  background: linear-gradient(to right, #ffd000, #ffd000);
+}
+
+.burger {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1%30' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler {
+  border: 1.9px solid black;
+  margin: 0 0.5rem 0 0;
+}
+
+.insumos {
+  color: white;
+}
+
+::after {
+  color: black;
+}
+
+.mini_boton {
+  background-color: #ffd000;
+  margin: 0 15rem;
+  padding: 0;
+  border-radius: 30px;
+  max-width: 100%;
+  opacity: 1;
+  height: 14.3px;
+}

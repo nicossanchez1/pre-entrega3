@@ -1,0 +1,14 @@
+@import "reset";
+@import "variables";
+@import "home";
+@import "navbar";
+@import "responsive";
+@import "footer";
+@import "contact";
+
+.minimo {
+  width: 100vw;
+  min-width: 100%;
+}
+
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);

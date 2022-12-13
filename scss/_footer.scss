@@ -1,0 +1,141 @@
+/*FOOTER */
+
+.oleaje {
+  opacity: 1;
+  background: white;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+}
+
+.oleajeFooter {
+  opacity: 1;
+  background: linear-gradient(
+    270deg,
+    #ff0037,
+    rgba(0, 0, 0, 1),
+    rgba(0, 196, 222, 1)
+  );
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.footerComleto {
+  width: 0;
+  max-width: 100%;
+}
+
+footer {
+  background: #ffd000;
+  padding: 0 0 5rem 0;
+  max-width: 102%;
+  justify-content: center;
+}
+
+.footer__title {
+  justify-content: center;
+  text-align: center;
+  margin: 0 0 1rem 0;
+  padding: 0;
+}
+
+.footer__nav {
+  justify-content: center;
+  list-style: none;
+  overflow: hidden;
+  display: inline-flex;
+  text-align: center;
+  padding: 1rem;
+  margin: 0;
+}
+
+.footer__nav .footer__link {
+  text-align: center;
+  justify-content: center;
+  min-width: 20%;
+  width: 20%;
+  height: 75%;
+  overflow: hidden;
+}
+
+.footah {
+  display: flex;
+  justify-content: center;
+}
+
+.footah .footah_link {
+  list-style: none;
+}
+
+.footah .footah_link a {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 80px;
+  font-size: 35px;
+  margin: 0 10px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  z-index: 1;
+}
+
+.footah .footah_link a .icon {
+  position: relative;
+  color: #f5002d;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+.footah .footah_link a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+.footah .footah_link a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.footah .footah_link a:hover:before {
+  top: 0;
+}
+
+.footah .footah_link:nth-child(1) a:before {
+  background: #3b5999;
+}
+
+.footah .footah_link:nth-child(2) a:before {
+  background: #55acee;
+}
+
+.footah .footah_link:nth-child(3) a:before {
+  background: #0077b5;
+}
+
+.footah .footah_link:nth-child(4) a:before {
+  background: #dd4b39;
+}
+
+.heading-line::before {
+  content: "";
+  width: 13.5rem;
+  height: 0.2rem;
+  display: block;
+  margin: 0 auto;
+  background-color: #f5002d;
+}

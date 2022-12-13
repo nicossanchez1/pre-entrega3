@@ -1,0 +1,109 @@
+@media (max-width: 768px) {
+  .navbar2 {
+    columns: 1;
+    visibility: hidden;
+    display: none;
+    justify-content: center;
+  }
+
+  .principalContacto {
+    width: 100%;
+  }
+
+  .slogan {
+    text-align: right;
+  }
+
+  .principal {
+    columns: 1;
+    text-align: center;
+    background: white;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .carousel {
+    justify-content: center;
+  }
+
+  .miPosition {
+    height: 80%;
+  }
+
+  .subtitle {
+    font-size: small;
+  }
+
+  .historia {
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 20rem;
+  }
+
+  .expand {
+    width: 100%;
+  }
+
+  .contacto,
+  .navbar-nav .ubicacion,
+  .escribenos,
+  .aceites,
+  .fluidos,
+  .neumaticos,
+  .filtros,
+  .repuestos,
+  .navinicial {
+    display: none;
+  }
+  .bienvenido {
+    background-color: #7c878d2f;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .aceites,
+  .filtros,
+  .repuestos,
+  .neumaticos,
+  .fluidos,
+  .donde_encontrarnos,
+  .inicio {
+    visibility: hidden;
+    display: none;
+  }
+
+  .carousel {
+    justify-content: center;
+  }
+
+  .bienvenido {
+    background-color: #7c878d2f;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .miPosition {
+    height: 50%;
+  }
+
+  .fixed {
+    position: fixed;
+  }
+
+  .navbar2 {
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar222 {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .carouselPadre {
+    display: contents;
+  }
+}
