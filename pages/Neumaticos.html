@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Daytona | Neumáticos</title>
     <meta name="description" content="Daytona ofrece la más amplia variedad de neumáticos, la mejor calidad y al mejor precio">
     <meta name="keywords" content="daytona, aceites, filtros, fluidos, repuestos, neumaticos, Daytona, aceite, filtro, fluido, repuesto, neumatico, neumáticos">   <link rel="shortcut icon" href="./img/car-4.png">
@@ -41,39 +42,36 @@
           <!-- MENU HAMBURGUESA DESPLEGADO -->
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item inicio"><a class="nav-link active text-center fw-bold" aria-current="page" href="../index.html"> Inicio</a></li>
+              <li class="nav-item inicio bg-dark py-1 rounded-3"><a class="nav-link active text-center fs-3 fw-bold py-0" aria-current="page" href="../index.html"> Inicio</a></li>
               <li class="nav-item contacto"><a class="nav-link active text-center fw-bold" href="./contacto.html">Contacto</a></li>
               <li class="nav-item aceites"><a class="nav-link active text-center fw-bold" href="./aceites.html">Aceites</a></li>
               <li class="nav-item filtros"><a class="nav-link active text-center fw-bold" href="./Filtros.html">Filtros</a></li>
               <li class="nav-item repuestos"><a class="nav-link active text-center fw-bold" href="./Repuestos.html">Repuestos</a></li>
               <li class="nav-item neumaticos"><a class="nav-link active text-center fw-bold" href="./Neumaticos.html">Neumáticos</a></li>
-              <li class="nav-item fluidos"><a class="nav-link active text-center fw-bold" href="./Fluidos.html">Fluidos</a></li>
-              <li class="nav-item"><a class="nav-link active ubicacion text-center fw-bold" href="https://goo.gl/maps/dXQ3g8wKDKFzKCR27" target="_blank">Ubicación</a></li>
+              <li class="nav-item"><a class="nav-link active ubicacion text-center fw-bold" href="./ubicacion.html">Ubicación</a></li>
               <!-- dropdown menu -->
-              <li class="nav-item donde_encontrarnos"><a class="nav-link active text-center fw-bold py-1 my-0" aria-current="page" href="#">Insumos</a></li>
-              <li class="nav-item dropdown donde_encontrarnos"><a class="nav-link mini_boton dropdown-toggle active text-center my-0 py-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img class="" src="" alt="" /></a>
-                <ul class="dropdown-menu bg-dark">
-                  <li><a class="dropdown-item text-warning fw-bold text-center" href="./aceites.html">Aceites</a></li>
-                  <li><a class="dropdown-item text-warning fw-bold text-center" href="./Filtros.html">Filtros</a></li>
-                  <li><a class="dropdown-item text-warning fw-bold text-center" href="./Repuestos.html">Repuestos</a></li>
-                  <li><a class="dropdown-item text-warning fw-bold text-center" href="./Neumaticos.html">Neumáticos</a></li>
-                  <li><a class="dropdown-item text-warning fw-bold text-center" href="./contacto.html">Fluidos</a></li>
+              <li class="nav-item donde_encontrarnos text-center mt-2"><a class="nav-link bg-dark active text-center fs-3 fw-bold py-1 my-0 rounded-3" aria-current="page" href="#">Insumos</a></li>
+                <ul class="products">
+                  <li><a class="dropdown-item text-warning fs-3 fw-bold text-center" href="./aceites.html">Aceites</a></li>
+                  <li><a class="dropdown-item text-warning fs-3 fw-bold text-center" href="./Filtros.html">Filtros</a></li>
+                  <li><a class="dropdown-item text-warning fs-3 fw-bold text-center" href="./Repuestos.html">Repuestos</a></li>
+                  <li><a class="dropdown-item text-warning fs-3 fw-bold text-center" href="./Neumaticos.html">Neumáticos</a></li>
                 </ul>
               </li>
               <!-- dropdown menu 2 -->
-              <li class="nav-item donde_encontrarnos"><a class="nav-link active text-center fw-bold py-0 mb-y" aria-current="page" href="#">Donde Encontrarnos</a></li>
-              <li class="nav-item dropdown donde_encontrarnos"><a class="nav-link mini_boton dropdown-toggle active text-center my-0 py-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img class="" src="" alt="" /></a>
-                <ul class="dropdown-menu bg-dark">
-                  <li><a class="dropdown-item text-warning fw-bold text-center" href="./contacto.html">Contacto</a></li>
-                  <li><a class="dropdown-item text-warning fw-bold text-center" href="https://goo.gl/maps/dXQ3g8wKDKFzKCR27" target="_blank">Ubicación</a></li>
+              <li class="nav-item donde_encontrarnos bg-dark mt-1 py-1 rounded-3"><a class="nav-link active text-center fs-3 fw-bold py-0 mb-y" aria-current="page" href="#">Donde Encontrarnos</a></li>
+                <ul class="products">
+                  <li><a class="dropdown-item text-warning fs-3 fw-bold text-center" href="./news.html">News</a></li>
+                  <li><a class="dropdown-item text-warning fs-3 fw-bold text-center" href="./contacto.html">Contacto</a></li>
+                  <li><a class="dropdown-item text-warning fs-3 fw-bold text-center" href="./ubicacion.html">Ubicación</a></li>
                 </ul>
               </li>
               </ul>
               </ul>
             <!-- Formulario search -->
-            <form class="d-flex" role="search">
-              <input class="form-control text me-3 px-4" type="search" placeholder="Introduce aquí el texto" aria-label="Search"/>
-              <button class="btn btn-outline-success active buscar" type="submit" href="">Buscar</button>
+            <form class="d-flex mx-3" role="search">
+              <input class="form-control text me-3" type="search" placeholder="Introduce aquí el texto" aria-label="Search"/>
+              <button class="btn btn-outline-success active buscar" type="submit" href=""><img class="search-icon" src="../img/search-icon.png" alt=""></button>
             </form>
           </div>
         </div>
@@ -84,18 +82,18 @@
       <div class="minimo row mx-0 p-0 m-0 mt-3 border-0">
         <!-- COMIENZO SIDEBARLEFT -->
         <div class="col-2 bg-white border-0 mt-4 px-0 mx-0 expand">
-          <div class="navbar2 border-0 mt-5 pt-0 ">
-            <div class="navbar22 mt-4 border-0 m-0 p-0">
+          <div class="navbar2">
+            <div class="navbar22 mt-4">
               <div class="border-end border-0 intro" id="sidebar-wrapper">
                 <div class="sidebar-heading border-bottom mt-0">
-                  <div class="fixed">
+                  <div class="fixed  border-0 m-0 p-0 pt-3">
                     <div class="list-group list-group-flush px-0 pt-3 col-2 border-0 navbar222">
-                    <a class="list-group-item sidebar_flex icon-inicio list-group-item-action  border-0 mx-0 px-0 py-3" href="../index.html"><img class="sidebar_icons" src="../img/inicio.png" alt="index"><span class="sidebar_text">Inicio</span></a>
-                    <a class="list-group-item sidebar_flex icon-aceites list-group-item-action  border-0  mx-0 px-0 py-3" href="./aceites.html"><img class="sidebar_icons" src="../img/car-aceite.png" alt="aceites" /><span class="sidebar_text">Aceites</span></a>
-                    <a class="list-group-item sidebar_flex icon-filtros list-group-item-action  border-0  mx-0 px-0 py-3" href="./Filtros.html"><img class="sidebar_icons" src="../img/filtro.png" alt="filtros" /><span class="sidebar_text">Filtros</span></a>
-                    <a class="list-group-item sidebar_flex icon-repuestos list-group-item-action  border-0   mx-0 px-0 py-3" href="./Repuestos.html"><img class="sidebar_icons molde" src="../img/spring.png" alt="repuestos" /><span class="sidebar_text">Repuestos</span></a>
-                    <a class="list-group-item sidebar_flex icon-fluidos list-group-item-action  border-0   mx-0 px-0 py-3" href="./Fluidos.html"><img class="sidebar_icons" src="../img/fluido.png" alt="fluidos" /><span class="sidebar_text">Fluidos</span></a>
-                    <a class="list-group-item sidebar_flex icon-neumaticos list-group-item-action  border-0   mx-0 px-0 py-3" href="./Neumaticos.html"><img class="sidebar_icons molde" src="../img/neumatico.png" alt="neumaticos" /><span class="sidebar_text">Neumáticos</span></a>
+                    <a class="list-group-item rounded-5 px-2 sidebar_flex icon-inicio list-group-item-action  border-0 mx-0 px-0 py-3" href="../index.html"><img class="sidebar_icons" src="../img/inicio.png" alt="index"><span class="sidebar_text">Inicio</span></a>
+                    <a class="list-group-item rounded-5 px-2 sidebar_flex icon-aceites list-group-item-action  border-0  mx-0 px-0 py-3" href="./aceites.html"><img class="sidebar_icons" src="../img/car-aceite.png" alt="aceites" /><span class="sidebar_text">Aceites</span></a>
+                    <a class="list-group-item rounded-5 px-2 sidebar_flex icon-filtros list-group-item-action  border-0  mx-0 px-0 py-3" href="./Filtros.html"><img class="sidebar_icons" src="../img/filtro.png" alt="filtros" /><span class="sidebar_text">Filtros</span></a>
+                    <a class="list-group-item rounded-5 px-2 sidebar_flex icon-repuestos list-group-item-action  border-0   mx-0 px-0 py-3" href="./Repuestos.html"><img class="sidebar_icons molde" src="../img/spring.png" alt="repuestos" /><span class="sidebar_text">Repuestos</span></a>
+                    <a class="list-group-item rounded-5 px-2 sidebar_flex icon-neumaticos list-group-item-action  border-0   mx-0 px-0 py-3" href="./Neumaticos.html"><img class="sidebar_icons molde" src="../img/neumatico.png" alt="neumaticos" /><span class="sidebar_text">Neumáticos</span></a>
+                    <a class="list-group-item rounded-5 px-2 sidebar_flex icon-news list-group-item-action  border-0   mx-0 px-0 py-3" href="./news.html"><img class="sidebar_icons" src="../img/news.png" alt="news" /><span class="sidebar_text">News</span></a>
                   </div>
                 </div>
               </div>
@@ -105,8 +103,22 @@
         </div>
         <!-- FIN SIDEBAR Y COMIENZO DE LA PARTE PRINCIPAL -->
           <div class="expand col-10 mx-0 px-0 mt-4">
-            <h2 class="bienvenido mt-4 pt-5  pb-3 mb-0 border-0 ps-0 me-0 fw-semibold text-center">Nuestros Neumáticos</h2>
-            <section class="m-5 p-4">
+            <div class="row intro-aceite mt-5 mx-0 mb-3">
+              <div class="col-6 intro-aceite-title text-center ms-5 ps-0 pt-5 pb-5 mb-5 mt-1">
+                <article class="border-0 mt-3">
+                  <h2 class="fw-bold" data-aos="fade-down" data-aos-delay="200">¿Por qué son importantes los neumáticos?</h2>
+                  <h4 class="text-center mx-5" data-aos="fade-up" data-aos-delay="200">Los neumáticos son extremadamente importantes, ya que son el único contacto entre el vehículo y carretera. La superficie de contacto entre un neumático y la carretera es un área que tiene aproximadamente el tamaño de una tarjeta postal. Por ello, es importante que se encuentren siempre en perfecto estado. En cualquier centro First Stop podrás encontrar el asesoramiento necesario para realizar el cambio de neumáticos contando con los mejores especialistas.</h4>
+                  <h4 class="text-center mx-5" data-aos="fade-up" data-aos-delay="200">Daytona ofrece todo ello y mucho más. Desliza hacia abajo y echa un vistazo!</h4>
+              </div>
+              </article>
+                <div class="col-5 intro-aceite-description text-end  px-0">
+                  <article class="border-0" data-aos="fade-left" data-aos-delay="400">
+                  <img class="img-motor-oil me-5 pe-5" src="../img/neuma.png" alt="">
+                </div>
+              </article>
+          </div>
+          <h2 class="title-sections rounded-5 pb-5 mt-3 fw-semibold text-center">Nuestros Aceites</h2>
+          <section class="m-5 p-5 pt-0 ps-3">
               <article>
                 <!--GRID ITEM-->
                 <h2 class="fw-bold">Pirelli</h2>
@@ -237,18 +249,22 @@
     <footer>
       <svg class="oleaje " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path class="path" fill="#f4d33a" fill-opacity="1" d="M0,96L60,106.7C120,117,240,139,360,160C480,181,600,203,720,186.7C840,171,960,117,1080,112C1200,107,1320,149,1380,170.7L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
       <div class="footer_space"> 
-        <h2 class="footer__title ps-4 text-center fw-bold">Buscanos en las redes</h2>
+        <h2 class="footer__title ps-1 text-center fw-bold">Redes</h2>
         <div class="heading-line mb-5"></div>
-        <ul class="footah m-0">
-          <li class="footah_link"><a href="https://www.instagram.com/nicossanchez/" target="_blank"><i class="fab fa-facebook-f icon"></i></a></li>
-          <li class="footah_link"><a href="https://twitter.com/nicossanchez" target="_blank"><i class="fab fa-twitter icon"></i></a></li>
-          <li class="footah_link"><a href="https://www.linkedin.com/in/nicossanchez/" target="_blank"><i class="fab fa-linkedin-in icon"></i></a></li>
+        <ul class="footah m-0 p-0">
+          <li class="footah_link"><a href="https://www.instagram.com" target="_blank"><i class="fab fa-facebook-f icon"></i></a></li>
+          <li class="footah_link"><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter icon"></i></a></li>
+          <li class="footah_link"><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in icon"></i></a></li>
           <li class="footah_link"><a href="https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=1209600&osid=1&continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&ifkv=ARgdvAtLmYlq883Mw2WEETNCG-SXwT9bIH3pKsnwXUQqcaoIt_z8FcvwVutb2W_nW_ICC00Yany8&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank"><i class="fab fa-google-plus-g icon"></i></a></li>
         </ul>
       </div>
     </footer>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      </script>
   </body>
 </html>
 
