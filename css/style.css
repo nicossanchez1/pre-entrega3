@@ -1106,39 +1106,17 @@ footer {
   max-width: 100%;
 }
 
-@media (max-width: 769px) {
-  .login-box {
-    justify-content: center;
-    overflow: hidden;
-    width: 80vw;
-    margin: 15rem 3.5rem;
-    margin-top: 10rem;
-    padding: 0;
-    background: rgba(0, 0, 0, 0.5);
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
-    border-radius: 10px;
-  }
-
-  .precision-area {
-    width: 769px;
-    max-width: 100%;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .mail-img {
-    display: none;
-  }
-
-  .mail-column {
-    display: none;
-  }
-}
-
 .text-area {
   overflow: hidden;
   width: 100%;
   max-width: 100%;
+}
+
+.precision-area {
+  width: 769px;
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
 .login-box h2 {
@@ -1291,6 +1269,35 @@ footer {
 @media only screen and (max-width: 768px) {
   .form-div {
     width: 78%;
+  }
+}
+
+@media (max-width: 769px) {
+  .login-box {
+    justify-content: center;
+    overflow: hidden;
+    width: 80vw;
+    margin: 15rem 3.5rem;
+    margin-top: 10rem;
+    padding: 0;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+  }
+
+  .precision-area {
+    width: 769px;
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .mail-img {
+    display: none;
+  }
+
+  .mail-column {
+    display: none;
   }
 }
 
