@@ -133,7 +133,6 @@ p {
   position: relative;
   height: 20vh;
   text-align: center;
-  background-color: ;
 }
 
 /* Animation */
@@ -597,9 +596,6 @@ p {
   position: relative;
 }
 
-.headerobjectswrapper {
-}
-
 .subhead {
   text-transform: uppercase;
   border-bottom: 2px solid #2f2f2f;
@@ -613,8 +609,6 @@ p {
   word-spacing: -0.31em;
   display: inline-block;
   margin: 30px 2% 0 2%;
-}
-.collumns {
 }
 
 .collumn {
